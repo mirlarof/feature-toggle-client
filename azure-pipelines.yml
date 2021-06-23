@@ -12,7 +12,7 @@ pool:
 variables:
   GH_TOKEN: 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
   #NPM_TOKEN: d93c450b-fe47-4f5e-96ee-2c38d672c8bb
-  NPM_TOKEN: 2d9a35dd-a3c6-4885-9697-adee518feb6a
+  NPM_TOKEN: fb09d2a5-4dd4-49f7-91a1-66839bb1bf07
 
 resources:
   repositories:   
