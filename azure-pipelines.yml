@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  GH_TOKEN: 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
+
 resources:
   repositories:   
   - repository: templates
