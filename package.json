@@ -11,10 +11,11 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   }, 
-    "command": {
+  "command": {
     "publish": {
       "verifyAccess": false
-   },
+    }
+  },
   "author": {
     "name": "Samuel Martins",
     "email": "samuels@take.net",
