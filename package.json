@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "description": "feature-toggle-client",
   "license": "MIT",
-  
-  "repository": "git://github.com/mirlarof/feature-toggle-client/tree/azure-pipelines",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirlarof/feature-toggle-client.git"
+  },
   "publishConfig": {
   "registry": "https://npm.pkg.github.com/"
    },
