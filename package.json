@@ -4,6 +4,18 @@
   "description": "feature-toggle-client",
   "license": "MIT",
   "repository": "",
+  
+  "command": {
+    "publish": {
+      "verifyAccess": false
+    }
+  },
+  
+    "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  
   "author": {
     "name": "Samuel Martins",
     "email": "samuels@take.net",
