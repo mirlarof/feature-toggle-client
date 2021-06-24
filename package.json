@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "feature-toggle-client",
   "license": "MIT",
-  "repository": "",
+  "repository": "git://github.com/mirlarof/feature-toggle-client/tree/azure-pipelines",
   "author": {
     "name": "Samuel Martins",
     "email": "samuels@take.net",
