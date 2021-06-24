@@ -1,5 +1,5 @@
 {
-  "name": "@mirlarof/feature-toggle-client",
+  "name": "feature-toggle-client",
   "version": "0.0.0",
   "description": "feature-toggle-client",
   "license": "MIT",
