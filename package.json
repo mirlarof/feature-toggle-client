@@ -10,7 +10,11 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
-  },  
+  }, 
+    "command": {
+    "publish": {
+      "verifyAccess": false
+   },
   "author": {
     "name": "Samuel Martins",
     "email": "samuels@take.net",
@@ -21,14 +25,6 @@
   ],
   "files": [
     "dist"
-  ],
-  "plugins": [
-    [
-      "npm",
-      {
-        "forcePublish": false
-      }
-    ]
   ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
