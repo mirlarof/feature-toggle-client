@@ -7,7 +7,7 @@
   "repository": "git://github.com/mirlarof/feature-toggle-client/tree/azure-pipelines",
   "publishConfig": {
   "registry": "https://npm.pkg.github.com/"
-   }
+   },
   
   "author": {
     "name": "Samuel Martins",
