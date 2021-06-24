@@ -1,0 +1,98 @@
+{
+  "name": "feature-toggle-client",
+  "version": "0.0.0",
+  "description": "feature-toggle-client",
+  "license": "MIT",
+  "repository": "git://github.com/mirlarof/feature-toggle-client/tree/azure-pipelines",
+  "author": {
+    "name": "Samuel Martins",
+    "email": "samuels@take.net",
+    "url": "https://blip.ai"
+  },
+  "keywords": [
+    ""
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "commit": "./node_modules/.bin/git-cz",
+    "clean": "rimraf lib",
+    "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote es5",
+    "lint": "tslint --format verbose \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build",
+    "prebuild": "npm run clean && npm run lint && echo Using TypeScript && tsc --version",
+    "build": "npm run prebuild && tsc --pretty",
+    "test": "jest",
+    "watch": "npm run build -- --watch",
+    "watch:test": "jest --watch",
+    "semantic-release": "semantic-release --prepare && npm publish && semantic-release post",
+    "start": "node ./src/main.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "launchdarkly-js-client-sdk": "^2.11.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.0.1",
+    "@types/node": "^8.0.0",
+    "commitizen": "^2.10.1",
+    "coveralls": "^3.0.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "cz-customizable": "5.3.0",
+    "cz-customizable-ghooks": "1.5.0",
+    "ghooks": "^2.0.4",
+    "jest": "^22.0.4",
+    "mock-fs": "^4.7.0",
+    "prettier": "^1.5.2",
+    "rimraf": "^2.0.0",
+    "semantic-release": "^15.9.15",
+    "ts-jest": "^22.0.1",
+    "ts-node": "^3.2.0",
+    "tslint": "^5.0.0",
+    "tslint-config-prettier": "^1.1.0",
+    "typescript": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    },
+    "ghooks": {
+      "commit-msg": "cz-customizable-ghooks $2"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true
+  },
+  "release": {
+    "analyzeCommits": {
+      "releaseRules": [
+        {
+          "type": "build",
+          "release": "patch"
+        }
+      ]
+    }
+  },
+  "jest": {
+    "transform": {
+      ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
