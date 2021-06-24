@@ -6,11 +6,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mirlarof/feature-toggle-client.git"
-  },
+  },  
   "publishConfig": {
-  "registry": "https://npm.pkg.github.com/"
-   },
-  
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },  
   "author": {
     "name": "Samuel Martins",
     "email": "samuels@take.net",
