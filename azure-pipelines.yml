@@ -10,14 +10,14 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-- group: Test-feature-toggle-client
+- group: npmjs-sample-variables
 
 resources:
   repositories:   
   - repository: templates
     type: git
     name: Operações/template-take-blip
-    ref: refs/heads/feature/npm-semantic-release-1
+    ref: refs/heads/feature/npm-semantic-release
 
 extends:
   template: template-pipeline.yml@templates    
